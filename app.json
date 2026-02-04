@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "name": "Note",
+    "slug": "note",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "supportsRTL": true,
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0F0F1E"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.example.react-native",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app needs access to your camera to take photos for notes.",
+        "NSPhotoLibraryUsageDescription": "This app needs access to your photo library to select images for notes.",
+        "NSLocationWhenInUseUsageDescription": "This app needs access to your location to add location data to notes."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0F0F1E"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.example.reactnative",
+      "softwareKeyboardLayoutMode": "pan",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-font",
+      "expo-location",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "This app needs access to your photos to select images for notes.",
+          "cameraPermission": "This app needs access to your camera to take photos for notes."
+        }
+      ]
+    ]
+  }
+}
